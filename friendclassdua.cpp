@@ -8,3 +8,18 @@ public :
       void shownilaipelajar(pelajar &x);
 };
 
+class pelajar
+{
+private :
+       int nilai;
+
+
+public :
+        pelajar () {nilai = 100; }
+        friend void manusia::shownilaipelajar(pelajar &x);
+};
+
+void manusia::shownilaipelajar(pelajar &x)
+{
+    cout << x.nilai;
+}
