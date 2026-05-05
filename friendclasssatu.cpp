@@ -16,3 +16,16 @@ public :
 
 };
 
+class siswa 
+{
+private :
+    int id;
+
+public :
+    void setId(int pId);
+    void displayALL(orang &a);
+};
+void siswa::setNama(orang&a)
+{
+     cout << id << endl << a.nama;
+}
